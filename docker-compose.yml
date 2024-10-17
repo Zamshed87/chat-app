@@ -1,0 +1,12 @@
+version: '3'
+services:
+  chat-app:
+    build: .
+    ports:
+      - "1000:1000"
+    networks:
+      - chat-network
+
+networks:
+  chat-network:
+
